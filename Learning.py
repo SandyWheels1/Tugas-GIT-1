@@ -1,10 +1,14 @@
-def shet():
-    Money=int(input("How much money?"))
-    if Money >= 500:
-        print ("damn you rich")
-    elif Money >= 200:
-        print ("okay")
-    else:
-        print ("poor")
+class MoneyAnalyzer:
+    def __init__(self):
+        pass
+    def praise(self):
+        Money = int(input("How much you have?"))
+        if Money >= 500:
+            print ("damn you rich")
+        elif Money >= 200:
+            print ("okay")
+        else:
+            print ("poor")
 
-shet()
+checker = MoneyAnalyzer()
+checker.praise()
